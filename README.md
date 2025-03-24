@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+The main purpose of this project is to gain comprehension on refactoring existing JavaScript in Object-Oriented Programming.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+This project focused mainly on refactoring our projust using OOP.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This sprint intorduced a new concept called object-oriented programming. Primarily focusing on objects that make up a program and how one object stores data and can be passed from one object to another. This is made possible through key OOP concepts like encapsulation, inheritance and polymorphism. We also covered how data and functions are used under OOP and how they are different that how we covered functions in past sprints.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://github.com/jonahsanpedro/se_project_todo-app#
