@@ -6,7 +6,7 @@ import FormValidator from "../components/FormValidator.js";
 
 const addTodoButton = document.querySelector(".button_action_add");
 const addTodoPopup = document.querySelector("#add-todo-popup");
-const addTodoForm = addTodoPopup.querySelector(".popup__form");
+const addTodoForm = document.forms["add-todo-form"];
 const addTodoCloseBtn = addTodoPopup.querySelector(".popup__close");
 // const todoTemplate = document.querySelector("#todo-template"); -> remove, this is now handled in the Todo class. leave for now to compare.
 const todosList = document.querySelector(".todos__list");
@@ -79,14 +79,22 @@ addTodoForm.addEventListener("submit", (evt) => {
 
   const id = uuidv4();
   const values = { name, date, id };
+  const renderTodo = (item) => {
+    const todo = generateTodo(item);
+    todosList.append(todo);
+  };
   const todo = generateTodo(values);
+
   todosList.append(todo);
   closeModal(addTodoPopup);
 });
 
-initialTodos.forEach((item) => {
+const renderTodo = (item) => {
   const todo = generateTodo(item);
   todosList.append(todo);
+};
+initialTodos.forEach((item) => {
+  renderTodo(item);
 });
 
 const newTodoValidator = new FormValidator(validationConfig, addTodoForm);
