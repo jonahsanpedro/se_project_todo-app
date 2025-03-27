@@ -79,13 +79,7 @@ addTodoForm.addEventListener("submit", (evt) => {
 
   const id = uuidv4();
   const values = { name, date, id };
-  const renderTodo = (item) => {
-    const todo = generateTodo(item);
-    todosList.append(todo);
-  };
-  const todo = generateTodo(values);
-
-  todosList.append(todo);
+  renderTodo(values);
   closeModal(addTodoPopup);
 });
 
@@ -98,5 +92,5 @@ initialTodos.forEach((item) => {
 });
 
 const newTodoValidator = new FormValidator(validationConfig, addTodoForm);
-newTodoValidator._enableValidation();
+newTodoValidator.enableValidation();
 // The FormValidator class is now being imported from the FormValidator.js file.
