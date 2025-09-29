@@ -4,7 +4,7 @@ The main purpose of this project is to gain comprehension on refactoring existin
 
 ## Functionality
 
-This project focused mainly on refactoring our projust using OOP.
+This project focused mainly on refactoring our project using OOP.
 
 ## Technology
 
